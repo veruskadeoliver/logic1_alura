@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var inicio = 30;
+
+    while (inicio <= 40) {
+        if (inicio == 33) {
+            inicio++
+        } else if(inicio == 37) {
+        inicio++;
+        } else {
+            mostra(inicio);
+            inicio++
+        }
+    }
+
+    mostra("FIM");
+</script>

@@ -1,0 +1,29 @@
+<meta charset="UTF-8" />
+<script>
+  function pulaLinha() {
+    document.write('<br><br>');
+  }
+
+  function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+  }
+
+/**
+ quando usamos o zero para iniciar uma repetição, precisamos substituir o sinal do limitador (espaco2), de <= (menor igual) para apenas < (menor), pois o zero conta como primeiro elemento dentro do laço.
+ */
+
+/**
+for( var i = 0; i < 10; i++ ) {
+    alert( "O resultado é " + (2 * i) );
+}
+*/
+
+var i = 0;
+while( i < 10 ) {
+    alert("O resultado é " + (2 * i))
+    i++;
+    }
+
+</script>
+

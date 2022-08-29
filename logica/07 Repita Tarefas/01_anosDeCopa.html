@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase) {
+
+    document.write(frase);
+    pulaLinha();
+}
+
+var anoCopa = 1930;
+var limite = parseInt(prompt("Entre com o ano limite"));
+
+// codição de repetição no while
+while(anoCopa <= limite) {
+
+mostra("Teve copa em " + anoCopa);
+anoCopa = anoCopa + 4;
+
+}
+
+mostra("FIM");
+
+// A primeira ferramenta de repetição que aprenderemos é chamada while, que recebe true
+
+// O while(true) indica que sempre será repetido o conteúdo do bloco dessa função. Se o while receber false, nada será repetido. Se salvarmos o programa, e recarregarmos a página, somente será exibido um alerta, com a mensagem FIM. A repetição não foi exibida.
+
+</script>

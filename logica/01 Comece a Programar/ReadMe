@@ -1,0 +1,68 @@
+<meta charset="UTF-8">
+O meta corrige todas acentuações e caracteres especiais.
+
+<h1>Meu primeiro teste!</h1>
+Será isso um programa?
+<br>
+<br>
+Para pular linha basta usar a tag "br" dentro das "<>"
+<br>
+<br>
+Para realizar o cabeçalho, basta usar a tag "h1" dentro das "<>"
+<br>
+<br>
+Para criar um link basta usar a tag "a" dentro das "<>" e colocar o link dentro do atributo "href"
+<br>
+<br>
+Clique aqui e veja o que acontece: <a href="http://www.google.com.br">Google</a>
+<br>
+<br>
+O html é um código estático. Assim precisamos escrever em javascript (linguagem de programação) para atualizar o conteúdo.
+<br>
+<br>
+Através do javascript, podemos escrever comandos que serão executados pelo navegador.
+<br>
+alert("Olá mundo!");
+<br>
+o alert é uma função do javascript que mostra uma mensagem na tela. Para que o comando seja executado é necessário colocar a função dentro de uma tag script.
+<script>
+    alert("Olá mundo!");
+</script>
+<br>
+<br>
+Para problema de acentuação, quando salvamos o arquivo é necessário um conjunto de caracteres especiais que é o UTF-8. Para isso, basta colocar o código no topo do arquivo html usando meta charset="UTF-8"
+
+Sobre alert, temos as seguintes afirmações:
+A instrução alert recebe um texto e todo texto em JavaScript é definido entre aspas.
+
+Assim como a língua portuguesa que possui regras, toda linguagem de programação também as possui e isso não é diferente com o JavaScript. Se não seguirmos sua sintaxe à risca, nosso código não funcionará.
+Aprendemos que a instrução alert é capaz de exibir um popup na tela, inclusive ela é capaz de receber um texto que será exibido no popup. É importante saber que o JavaScript faz distinção entre letras MAIÚSCULAS e minúsculas, portanto se escrever 'Alert' ou 'ALERT' o comando não será reconhecido e o interpretador acusará um erro de sintaxe.
+Texto em JavaScript vem entre aspas. Mas por que isso Flávio? Porque os criadores da linguagem JavaScript quiseram assim e definiram em sua sintaxe que tudo que estiver entre aspas é um texto. Aliás, há um termo técnico usado quando falamos de texto, este termo é string.
+
+Exemplo de popup vazio:
+<meta charset="UTF-8">
+<script>
+    alert();
+</script>
+
+Quando usamos a instrução alert() um popup será exibido e nenhum erro acontecerá. 
+Contudo, nenhuma mensagem será exibida no popup. Mas que popup é esse que não exibe nada gente?
+Sendo assim, precisamos passar um parâmetro para a instrução.
+Se quisermos exibir um texto aprendemos que texto em JavaScript vem entre aspas.
+Daí temos alert("Gostou do meu popup?"). Neste exemplo, dizemos que a instrução alert recebe como parâmetro um texto. Veja que esse parâmetro deve ser passado dentre os parênteses, caso contrário teremos um erro de sintaxe.
+
+Tudo que estiver entre as TAG's <script> e </script> é considerado pelo navegador como código JavaScript e tudo que estiver fora das TAG's, não importa em que lugar, é código HTML.
+
+<meta charset="UTF-8">
+Estou escrevendo do mundo JavaScript no mundo HTML
+<script>
+
+</script>
+Aqui também é mundo HTML, porque esta fora da TAG script
+
+A vantagem é que com document.write podemos passar o resultado de um cálculo entre outras coisas de maneira dinâmica já que o mundo HTML não é capaz de realizar operações matemáticas.
+
+<meta charset="UTF-8">
+<script>
+    document.write(10 + 20);
+</script>

@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+var a = parseInt("10");
+var b = parseInt("Calopsita");
+var c = parseInt(10);
+
+mostra("O tque retorna em " + a + " e o que retorna em " + b + " e " + c);
+
+</script>
+
+// A variável a recebe o número 10 retornado por parseInt. Veja que a função esta recebendo a string "10". Ela converte a string em um número.
+
+A variável b recebe NaN (not a number) retornado por parseInt. Isso é verdade, porque parseInt está recebendo a string "Calopsita". É impossível converter esse texto para número, pois não há uma representação numérica para ele, como foi o caso de a.
+
+A variável c recebe 10, número, retornado por parseInt. Quando parseInt recebe um número e não uma string, ele devolve o mesmo número, ou seja, não realiza conversão alguma. Não dá erro, funciona.

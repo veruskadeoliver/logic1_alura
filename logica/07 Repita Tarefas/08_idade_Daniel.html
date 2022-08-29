@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+
+    var idade = parseInt(prompt("Digite sua idade"));
+
+    while (isNaN(idade)) {
+        idade = parseInt(prompt("Digite sua idade"));
+    }
+
+    // Para saber se um valor é NaN precisamos usar uma função específica, a isNaN. Essa função recebe um parâmetro e retorna true ou false caso o valor seja NaN ou não.
+
+    // Outra forma seria fazer isNaN(idade) == true, mas não é necessário testar se true é igual a true, o resultado será true. É por isso que passamos direto para o while isNan(idade) que retorna já verdadeiro ou falso.
+
+    alert(idade);
+</script>

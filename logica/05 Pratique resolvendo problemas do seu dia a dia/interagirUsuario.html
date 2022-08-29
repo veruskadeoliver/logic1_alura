@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+}
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+}
+
+    function calculaImc(altura, peso) {
+
+        return peso / (altura * altura);
+}
+
+var nome = prompt("Digite seu nome: ");
+//var alturaInformada = 1.65;
+var alturaInformada = prompt(nome + "Informe sua altura");
+//var pesoInformado = 84;
+var pesoInformado = prompt(nome + "Informe seu peso");
+
+var imc = calculaImc(alturaInformada, pesoInformado);
+
+document.write(nome + ", o seu IMC é " + imc);
+
+//F12 - permite que o usuário veja o código fonte do arquivo. (JavaScript)
+
+//Console - permite que o usuário veja o resultado da operação. (JavaScript)
+
+//Promp - é uma função que permite que o usuário insira alguma informação. (JavaScript) - A função prompt é a primeira forma que aprendemos para capturar a entrada do usuário.
+
+//alert - é uma função que mostra uma mensagem para o usuário. (JavaScript)
+
+//confirm - é uma função que mostra uma mensagem para o usuário e permite que ele escolha uma opção. (JavaScript)
+
+//document.write - é uma função que escreve alguma informação no documento. (JavaScript)
+
+</script>
+
+

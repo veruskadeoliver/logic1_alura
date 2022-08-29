@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha () {
+        document.write("<br>");
+    }
+
+    function mostra (geracoes) {
+    document.write(geracoes);
+    pulaLinha();
+    }
+
+    var primeiraGeracao = 1500;
+    var atualidade = 2022;
+    var idadeMedia = 28;
+    
+    var geracoes = (atualidade - primeiraGeracao)/idadeMedia;
+
+    mostra("A quantidade de gerações desde a chegada dos portugueses são de " + geracoes + " gerações");
+
+    </script>
