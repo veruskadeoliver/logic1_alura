@@ -1,0 +1,19 @@
+<script>
+    function pulaLinha() {
+      document.write('<br>');
+    }
+  
+    function mostra(frase) {
+      document.write(frase);
+      pulaLinha();
+    }
+
+    for(linha = 1; linha <= 35; linha++) {
+        
+        for(coluna = 1; coluna <= 95; coluna++) {
+            document.write("*");
+        }
+        pulaLinha();
+    }
+
+    </script>
