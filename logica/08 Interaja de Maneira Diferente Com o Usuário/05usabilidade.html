@@ -1,0 +1,27 @@
+<meta charset="UTF-8" />
+
+<input />
+<button>Comparando Valores</button>
+
+<script>
+  var segredo = Math.round(Math.random() * 5);
+  var input = document.querySelector('input');
+  input.focus(); /**Deixando A Caixinha Com a Barra de Digitar Texto**/
+
+  function verifica() {
+    if (input.value == segredo) {
+      alert('Você ACERTOU!!!');
+    } else {
+      alert('Você ERROU!!!');
+    }
+
+    input.value = ''; /**Limpando o Campo**/
+    input.focus(); /**Brilho da Caixa de Texto**/
+  }
+
+  var button = document.querySelector('button');
+  button.onclick = verifica;
+  /** sem o parenteses da função verifica, ela é executada e não chamada**/
+
+
+</script>
