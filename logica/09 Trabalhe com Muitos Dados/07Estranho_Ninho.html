@@ -1,0 +1,12 @@
+<meta charset="UTF-8">
+<script>
+var letras = ['A', 'B', 'C', 'D'];
+
+for( var i = 0; i < letras.length; i++ ) {
+    alert(letras[i]);
+}
+
+/*
+Parabéns! Você percebeu que o problema está na condição do loop for. Veja que Bruno fez assim: i <= letras.length Isso significa que a variável i será incrementada de 0 até 4, o que não está correto. Se temos 4 elementos da lista, os índices devem ir de 0 a 3, pois o último índice é o tamanho da lista menos um. Para resolver basta usarmos<no lugar de <=
+*/
+</script>
