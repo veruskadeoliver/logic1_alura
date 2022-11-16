@@ -25,6 +25,9 @@
         contador++;
     }
     }
-    
+
     console.log(ingredientes);
+
+    //Antes de adicionar um ingrediente na array, precisamos verificar se ele já foi adicionado antes. Por isso, verificamos, a cada ingrediente adicionado, se ele existe na lista e caso não, podemos acrescentá-lo. Note que criamos uma variável chamada existe, ela inicia com o false e só é verdadeira, se o elemento existir. Caso isso aconteça, não faz sentido continuar varrendo o array e saímos do loop por meio do break. O break "quebra" o for e o while, no final, testamos a variável existe para saber se incluímos ou não o ingrediente. Muita atenção, pois só podemos incrementar a variável contador quando o ingrediente não existir. Isso é importante, uma vez que ele existe, precisamos repetir a pergunta por novos ingredientes ao usuário.
+    
 </script>
